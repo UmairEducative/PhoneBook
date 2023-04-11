@@ -3,11 +3,9 @@ package PhoneBook
 import (
 	"encoding/csv"
 	"fmt"
-	"net/http"
 	"os"
 	"regexp"
 	"strconv"
-	"strings"
 	"time"
 )
 
@@ -20,6 +18,8 @@ type Entry struct {
 	Tel        string
 	LastAccess string
 }
+
+const CSVFILE = "data.csv"
 
 type PhoneBook []Entry
 
